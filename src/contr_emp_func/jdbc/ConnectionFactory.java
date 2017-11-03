@@ -8,7 +8,7 @@ public class ConnectionFactory {
 	public Connection getConnection(){
 		try {
 			return DriverManager.getConnection(
-					"jdbc:derby:/localhost/controle-emprestimo-funcionario/database_derby;create=true;upgrade=true","root","");
+					"jdbc:derby:cooperalfa;create=true;upgrade=true","root","");
 		}catch(SQLException e) {
 			throw new RuntimeException(e);
 		}
